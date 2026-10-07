@@ -1,0 +1,108 @@
+
+<!-- saved from url=(0124)https://sandbox.practicum-team.ru/tasks/02-interactivity-and-accessibility/05-accesibility/08-aria/example-02/pre/flems.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список табов</title>
+    <link rel="stylesheet" href="./fonts.css">
+    <link rel="stylesheet" href="./styles.css">
+  <style id="styles/styles.css">*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 850px;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-image: url(https://code.s3.yandex.net/web-code/images/dotted-l.svg);
+}
+
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.tablist-zone {
+  width: 40%;
+  margin: auto;
+  border: 1px solid #000;
+  background-color: #fff;
+}
+
+.tab-list {
+  display: flex;
+  list-style: none;
+}
+
+.tab_active {
+  background-color: #fff;
+}
+
+button {
+  border: none;
+  border-right: 1px solid #000;
+  padding: 10px 35px;
+  color: #000;
+  font-weight: 800;
+  text-transform: uppercase;
+  background-color: #ffc802;
+  cursor: pointer;
+}
+
+.person {
+  width: 100%;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  object-fit: cover;
+  object-position: center;
+  aspect-ratio: 16/9;
+}
+
+.meredith {
+  display: none;
+}
+
+.caption {
+  padding: 16px 20px 20px;
+  opacity: 0.8;
+  font-size: 12px;
+}
+</style></head>
+  <body>
+    <section class="tablist-zone">
+      <ul class="tab-list" role="tablist">
+        <li class="tab">
+          <button role="tab" class="king-button tab_active">
+            Мартин Лютер Кинг
+          </button>
+        </li>
+        <li class="tab">
+          <button role="tab" class="meredith-button">Джеймс Мередит</button>
+        </li>
+      </ul>
+      <article class="content king">
+        <img src="./king.jpg" alt="Мартин Лютер Кинг на марше за гражданские права в Вашингтоне" class="person">
+        <p class="caption">
+          Мартин Лютер Кинг на марше за гражданские права в Вашингтоне
+        </p>
+      </article>
+      <article class="content meredith">
+        <img src="./meredith.jpg" alt="Джеймс Мередит в сопровождении федеральных маршалов" class="person">
+        <p class="caption">
+          Джеймс Мередит в сопровождении федеральных маршалов
+        </p>
+      </article>
+    </section>
+    <script charset="utf-8" src="./script(1).js.загрузка"></script>
+  
+
+</body></html>

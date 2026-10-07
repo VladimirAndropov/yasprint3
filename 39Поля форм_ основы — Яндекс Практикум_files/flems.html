@@ -1,0 +1,73 @@
+
+<!-- saved from url=(0131)https://sandbox.practicum-team.ru/tasks/02-interactivity-and-accessibility/05-accesibility/07-form-fields/example-01/pre/flems.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поля формы</title>
+    <link rel="stylesheet" href="./fonts.css">
+    <link rel="stylesheet" href="./style.css">
+  <style id="styles/style.css">* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 850px;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-image: url(https://code.s3.yandex.net/web-code/images/dotted-l.svg);
+}
+
+input,
+label {
+  display: block;
+}
+
+input {
+  border: 1px solid #000;
+  padding: 10px 15px;
+  font-family: inherit;
+  font-size: 16px;
+  background-color: transparent;
+}
+
+label,
+label span {
+  font-weight: 800;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+input:focus {
+  outline: 2px solid #000;
+  outline-offset: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #000;
+  padding: 45px;
+  background-color: #80d994;
+}
+
+.name {
+  margin-bottom: 16px;
+}
+</style></head>
+  <body>
+    <form>
+      <label class="name">
+        <span>Имя</span>
+        <input type="text">
+      </label>
+      <label for="surname">Фамилия</label>
+      <input id="surname" type="text">
+    </form>
+  
+
+</body></html>

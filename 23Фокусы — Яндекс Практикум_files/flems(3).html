@@ -1,0 +1,88 @@
+
+<!-- saved from url=(0121)https://sandbox.practicum-team.ru/tasks/02-interactivity-and-accessibility/04-pseudo/03-focuses/example-04/pre/flems.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма с focus-within</title>
+    <link rel="stylesheet" href="./fonts.css">
+    <link rel="stylesheet" href="./style(3).css">
+  <style id="styles/style.css">html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 850px;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  background-image: url(https://code.s3.yandex.net/web-code/images/dotted-l.svg);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid #000;
+  padding: 45px;
+  background-color: #80d994;
+}
+
+form:focus-within {
+  background-color: #c4c4c4;
+}
+
+.form-row {
+  display: grid;
+  gap: 10px;
+  border: 1px dashed lightseagreen;
+}
+
+input:focus-within,
+button:focus-within {
+  outline: 5px solid #fd24af;
+}
+
+input[type=text] {
+  border: 1px solid #000;
+  padding: 10px 15px;
+  font-family: inherit;
+  font-size: inherit;
+  background-color: transparent;
+}
+
+input[type=text]::placeholder {
+  color: rgb(0 0 0 / 0.6);
+}
+
+input[type=text]:focus {
+  outline: 2px solid #000;
+  outline-offset: 0;
+}
+
+button {
+  margin-bottom: 10px;
+  border: 1px solid #000;
+  padding: 10px 65px;
+  color: #000;
+  font-family: inherit;
+  font-weight: 800;
+  font-size: inherit;
+  text-transform: uppercase;
+  background-color: #ffc802;
+}
+</style></head>
+  <body>
+    <form>
+      <div class="form-row">
+        <label for="name">Введите ваше имя</label>
+        <input id="name" type="text" placeholder="Представьтесь">
+      </div>
+      <button>Отправить</button>
+    </form>
+  
+
+</body></html>

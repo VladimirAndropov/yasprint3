@@ -1,0 +1,115 @@
+
+<!-- saved from url=(0152)https://sandbox.practicum-team.ru/tasks/02-interactivity-and-accessibility/05-accesibility/06-contentful-and-decorative-images/example-01/pre/flems.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цитата Далай Ламы</title>
+    <link rel="stylesheet" href="./fonts.css">
+    <link rel="stylesheet" href="./style.css">
+  <style id="styles/style.css">*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 850px;
+  min-height: 100vh;
+  margin: auto;
+  font-family: 'Open Sans', sans-serif;
+  background-image: url(https://code.s3.yandex.net/web-code/images/dotted-l.svg);
+}
+
+h1,
+h2,
+p,
+blockquote {
+  margin: 0;
+}
+
+.cards {
+  display: flex;
+  gap: 40px;
+}
+
+.card {
+  width: 300px;
+  border: 1px solid #000;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.card__image-wrapper {
+  position: relative;
+  padding-bottom: 100%;
+}
+
+.dalai-lama-photo {
+  background-image: url(./images/dalai-lama.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.card__image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card__description {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  color: #fff;
+  text-align: right;
+}
+
+.photo-copyright {
+  font-size: 12px;
+}
+
+.card__quote {
+  padding: 16px;
+  font-size: 20px;
+}
+</style></head>
+  <body>
+    <div class="cards">
+      <article class="card">
+        <div class="card__image-wrapper dalai-lama-photo">
+          <div class="card__description">
+            <h2 class="card__title">Далай Лама</h2>
+            <p class="photo-copyright">Фото: агентство Reuters</p>
+          </div>
+        </div>
+        <blockquote class="card__quote">
+          <p>
+            Будь готов изменить свои цели, но никогда не изменяй свои ценности.
+          </p>
+        </blockquote>
+      </article>
+      <article class="card">
+        <div class="card__image-wrapper">
+          <img class="card__image" src="./dalai-lama.jpg" alt="Далай Лама в монашеской одежде, с лёгкой улыбкой на лице, показывает двумя пальцами символ мира.">
+          <div class="card__description">
+            <h2 class="card__title">Далай Лама</h2>
+            <p class="photo-copyright">Фото: агентство Reuters</p>
+          </div>
+        </div>
+        <blockquote class="card__quote">
+          <p>
+            Будь готов изменить свои цели, но никогда не изменяй свои ценности.
+          </p>
+        </blockquote>
+      </article>
+    </div>
+  
+
+</body></html>

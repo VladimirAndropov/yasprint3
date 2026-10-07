@@ -1,0 +1,69 @@
+
+<!-- saved from url=(0119)https://sandbox.practicum-team.ru/tasks/02-interactivity-and-accessibility/04-pseudo/04-count/example-04/pre/flems.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Разница между nth-child и nth-of-type</title>
+    <link rel="stylesheet" href="./fonts.css">
+    <link rel="stylesheet" href="./style(3).css">
+  <style id="styles/style.css">html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  min-width: 850px;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 35px;
+  max-width: 60%;
+  margin: auto;
+
+}
+
+button {
+  border: 1px solid black;
+  padding: 20px 25px;
+  color: black;
+  font-family: inherit;
+  font-weight: 800;
+  font-size: 20px;
+  text-transform: uppercase;
+  background-color: #ffc802;
+}
+
+button:last-child {
+  margin-left: 25px;
+}
+
+/* Не работает, перед кнопкой появился ещё один абзац */
+
+button:nth-child(3) {
+  color: #fd24af;
+}
+
+/* Работает, всегда выбирает первую кнопку */
+
+button:first-of-type {
+  color: #fd24af;
+}
+</style></head>
+  <body>
+    <div class="container">
+      <section>
+        <h1>Не имей сто рублей</h1>
+        <p>А имей сто друзей</p>
+        <p>Что выберете вы?</p>
+        <button>+100 друзей</button>
+        <button>+100 рублей</button>
+      </section>
+    </div>
+  
+
+</body></html>

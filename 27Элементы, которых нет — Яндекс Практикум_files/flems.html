@@ -1,0 +1,42 @@
+
+<!-- saved from url=(0129)https://sandbox.practicum-team.ru/tasks/02-interactivity-and-accessibility/04-pseudo/07-pseudo-elements/example-01/pre/flems.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Абзац с псевдоэлементами</title>
+    <link rel="stylesheet" href="./fonts.css">
+    <link rel="stylesheet" href="./style.css">
+  <style id="styles/style.css">body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 850px;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-image: url(https://code.s3.yandex.net/web-code/images/dotted-l.svg);
+}
+
+p {
+  max-width: 600px;
+  border: 1px solid #000;
+  padding: 50px;
+  font-size: 30px;
+  background-color: #fff;
+}
+
+p::before {
+  content: 'Заметка! ';
+  color: #fd24af;
+}
+
+p::after {
+  content: '!';
+  color: #fd24af;
+}
+</style></head>
+  <body>
+    <p>Это какой-то текст, к которому будут добавлены псевдоэлементы</p>
+  
+
+</body></html>

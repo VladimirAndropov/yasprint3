@@ -1,0 +1,107 @@
+
+<!-- saved from url=(0140)https://sandbox.practicum-team.ru/tasks/02-interactivity-and-accessibility/05-accesibility/05-how-to-hide-elements/example-01/pre/flems.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Демонстрация скрытых элементов</title>
+    <link rel="stylesheet" href="./fonts.css">
+    <link rel="stylesheet" href="./style.css">
+  <style id="styles/style.css">body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 850px;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0 40px;
+  font-family: 'Open Sans', sans-serif;
+  background-image: url(https://code.s3.yandex.net/web-code/images/dotted-l.svg);
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+.demo-zone {
+  border: 1px solid #000;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.demo-zone h2 {
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+.demo-zone button {
+  width: 100%;
+  border: 1px solid #000;
+  padding: 10px 65px;
+  color: #fff;
+  font-family: inherit;
+  font-weight: 800;
+  font-size: inherit;
+  text-transform: uppercase;
+  background-color: #fd24af;
+}
+
+.demo-zone button:hover {
+  box-shadow: inset 0 0 0 100px rgb(0 0 0 / 0.15);
+  cursor: pointer;
+}
+
+.demo-zone p {
+  font-size: 1.2em;
+}
+
+.demo {
+  margin-top: 20px;
+}
+
+.demo-zone .icon {
+  font-size: 5em;
+  text-align: center;
+}
+</style></head>
+  <body>
+    <section class="container">
+      <div class="demo-zone display">
+        <h2>display: none;</h2>
+        <button>Скрыть блок</button>
+        <div class="demo">
+          <p>Иногда мир CSS преподносит сюрпризы.</p>
+          <p class="icon">🦄</p>
+          <p>И только со временем они становятся приятными.</p>
+        </div>
+      </div>
+      <div class="demo-zone visibility">
+        <h2>visibility: hidden;</h2>
+        <button>Скрыть блок</button>
+        <div class="demo">
+          <p>Иногда мир CSS преподносит сюрпризы.</p>
+          <p class="icon">🦄</p>
+          <p>И только со временем они становятся приятными.</p>
+        </div>
+      </div>
+      <div class="demo-zone visibility-attr">
+        <h2>Аттрибут hidden</h2>
+        <button>Скрыть блок</button>
+        <div class="demo">
+          <p>Иногда мир CSS преподносит сюрпризы.</p>
+          <p class="icon">🦄</p>
+          <p>И только со временем они становятся приятными.</p>
+        </div>
+      </div>
+    </section>
+    <script charset="utf-8" src="./script.js.загрузка"></script>
+  
+
+</body></html>

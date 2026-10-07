@@ -1,0 +1,79 @@
+
+<!-- saved from url=(0120)https://sandbox.practicum-team.ru/tasks/02-interactivity-and-accessibility/04-pseudo/08-marker/example-01/pre/flems.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список с кастомными маркерами</title>
+    <link rel="stylesheet" href="./fonts.css">
+    <link rel="stylesheet" href="./style.css">
+  <style id="styles/style.css">html,
+body {
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 850px;
+  height: 100%;
+  font-size: 30px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: flex;
+  align-items: center;
+}
+
+li::before {
+  content: '';
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-inline-end: 10px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+li:nth-child(2)::before {
+  background-color: orange;
+}
+
+li:nth-child(3)::before {
+  background-color: yellow;
+}
+
+li:nth-child(4)::before {
+  background-color: green;
+}
+
+li:nth-child(5)::before {
+  background-color: lightblue;
+}
+
+li:nth-child(6)::before {
+  background-color: blue;
+}
+
+li:last-child::before {
+  background-color: purple;
+}
+</style></head>
+  <body>
+    <ul>
+      <li>Каждый</li>
+      <li>Охотник</li>
+      <li>Желает</li>
+      <li>Знать</li>
+      <li>Где</li>
+      <li>Сидит</li>
+      <li>Фазан</li>
+    </ul>
+  
+
+</body></html>

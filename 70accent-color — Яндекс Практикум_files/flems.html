@@ -1,0 +1,141 @@
+
+<!-- saved from url=(0131)https://sandbox.practicum-team.ru/tasks/02-interactivity-and-accessibility/08-forms-style/07-accent-color/example-01/pre/flems.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Демо для accent-color</title>
+    <link rel="stylesheet" href="./fonts.css">
+    <link rel="stylesheet" href="./style.css">
+  <style id="styles/style.css">:root {
+  --color: #fd24af;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  min-width: 650px;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  background-color: #6dc1fd;
+}
+
+.demo {
+  display: grid;
+  gap: 35px;
+  width: 550px;
+  border: 2px solid #000;
+  padding: 35px;
+  background-color: #fff;
+}
+
+.demo-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.demo-control__label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.demo-control {
+  width: 20px;
+  height: 20px;
+}
+
+.demo-elements {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.demo-elements__row {
+  width: calc(50% - 20px);
+}
+
+.demo-elements__row > input:not([type='range']) {
+  width: 30px;
+  height: 30px;
+}
+
+.demo-elements__row > input[type='range'],
+.demo-elements__row > progress {
+  width: 100%;
+}
+
+.accent-color {
+  accent-color: var(--color);
+}
+
+@supports (accent-color: #fff) {
+  .note {
+    display: none;
+  }
+}
+</style></head>
+
+  <body>
+    <div class="demo">
+      <p class="note">
+        Ваш браузер не поддерживает <code>accent-color</code> 😱
+      </p>
+      <div class="demo-controls">
+        <label for="auto" class="demo-control__label">
+          <input type="radio" class="demo-control" name="color" value="auto" id="auto">
+          <code>auto</code>
+        </label>
+
+        <label for="purple" class="demo-control__label">
+          <input type="radio" class="demo-control" name="color" value="#5f0dee" id="purple">
+          Фиолетовый
+        </label>
+
+        <label for="pink" class="demo-control__label">
+          <input type="radio" class="demo-control" name="color" value="#fd24af" id="pink" checked="">
+          Фуксия
+        </label>
+
+        <label for="green" class="demo-control__label">
+          <input type="radio" class="demo-control" name="color" value="#80d994" id="green">
+          Зелёный
+        </label>
+      </div>
+      <div class="demo-elements">
+        <div class="demo-elements__row">
+          <input type="checkbox" checked="">
+          <input type="checkbox" checked="" class="accent-color">
+        </div>
+        <div class="demo-elements__row">
+          <input type="radio" name="radio" checked="">
+          <input type="radio" name="radio" class="accent-color">
+        </div>
+        <div class="demo-elements__row">
+          <progress value="50" max="100"></progress>
+          <progress value="80" max="100" class="accent-color"></progress>
+        </div>
+        <div class="demo-elements__row">
+          <input type="range" min="10" max="20" step="1">
+          <input class="accent-color" type="range" min="10" max="20" step="1">
+        </div>
+      </div>
+    </div>
+    <script charset="utf-8" src="./script.js.загрузка"></script>
+  
+
+</body></html>

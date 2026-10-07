@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- saved from url=(0096)https://code.s3.yandex.net/web-developer/widgets/forms-theme-inputs/inputs/3.2.input-number.html -->
+<html lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>4.1 Inputs</title>
+  <link rel="stylesheet" href="./index.css">
+  <link href="./atelier-heath-dark.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+  <div class="root">
+    <div class="header">
+      <div class="header__block">
+        <h1 class="header__title">Код</h1>
+      </div>
+      <div class="header__block">
+        <h1 class="header__title header__title_position_last">Пример</h1>
+      </div>
+    </div>
+    <div class="content">
+      <div class="code">
+        <pre><code class="html code__block code__block_order_first hljs xml">
+<span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"number"</span> <span class="hljs-attr">min</span>=<span class="hljs-string">"1970"</span> <span class="hljs-attr">max</span>=<span class="hljs-string">"2025"</span>&gt;</span>
+        </code></pre>
+      </div>
+      <div class="example example_order_single example_type_range">
+        <input type="number" min="1970" max="2025">
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    const placer = document.querySelector('span');
+    document.querySelector('input').oninput = () => {
+      placer.textContent = document.querySelector('input').value;
+    }
+  </script>
+  <script src="./highlight.pack.js.загрузка" type="text/javascript"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="./script.js.загрузка"></script>
+
+
+</body></html>

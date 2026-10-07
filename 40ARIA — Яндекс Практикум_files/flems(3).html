@@ -1,0 +1,61 @@
+
+<!-- saved from url=(0124)https://sandbox.practicum-team.ru/tasks/02-interactivity-and-accessibility/05-accesibility/08-aria/example-04/pre/flems.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Иконки социальных сетей</title>
+    <link rel="stylesheet" href="./fonts.css">
+    <link rel="stylesheet" href="./style(2).css">
+  <style id="styles/style.css">body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 850px;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-image: url(https://code.s3.yandex.net/web-code/images/dotted-l.svg);
+}
+
+.social {
+  border: 1px solid #000;
+  padding: 50px;
+  background-color: #fff;
+}
+
+.links-list {
+  display: flex;
+  gap: 16px;
+  padding: 0;
+  list-style: none;
+}
+
+.links-list a {
+  display: block;
+  width: 40px;
+}
+
+.links-list img {
+  width: 100%;
+}
+</style></head>
+  <body>
+    <nav class="social" aria-label="Блок ссылок на социальные сети">
+      <h2>Каналы:</h2>
+      <ul class="links-list" aria-label="Подписка на телеграм и ютуб">
+        <li>
+          <a href="https://telegram.com/" aria-label="Телеграм">
+            <img aria-hidden="true" src="./tg(1).svg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="https://youtube.com/" aria-label="Ютуб">
+            <img aria-hidden="true" src="./yt(1).svg" alt="">
+          </a>
+        </li>
+      </ul>
+    </nav>
+  
+
+</body></html>

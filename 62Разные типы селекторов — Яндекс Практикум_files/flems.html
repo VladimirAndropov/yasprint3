@@ -1,0 +1,48 @@
+
+<!-- saved from url=(0144)https://sandbox.practicum-team.ru/tasks/02-interactivity-and-accessibility/07-amazing-selectors/05-different-selectors/example-01/pre/flems.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проверяем каскад</title>
+    <link rel="stylesheet" href="./fonts.css">
+    <link rel="stylesheet" href="./style.css">
+  <style id="styles/style.css">body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  background-image: url(https://code.s3.yandex.net/web-code/images/dotted.svg);
+}
+
+section {
+  width: 50%;
+  margin-bottom: 25px;
+  border: 1px solid #000;
+  padding: 40px;
+  background-color: #fff;
+}
+
+section > p {
+  font-weight: bold;
+  text-decoration: underline;
+}
+</style></head>
+  <body>
+    <section>
+      <p>Я прямой</p>
+      <p>потомок секции</p>
+    </section>
+
+    <section>
+      <div>
+        <p>Я не прямой</p>
+        <p>потомок секции</p>
+      </div>
+    </section>
+  
+
+</body></html>

@@ -1,0 +1,107 @@
+
+<!-- saved from url=(0117)https://sandbox.practicum-team.ru/tasks/02-interactivity-and-accessibility/04-pseudo/06-has/example-01/pre/flems.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карточки товаров</title>
+    <link rel="stylesheet" href="./fonts.css">
+    <link rel="stylesheet" href="./style.css">
+  <style id="styles/style.css">html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 850px;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-image: url(https://code.s3.yandex.net/web-code/images/dotted-l.svg);
+}
+
+.container {
+  display: flex;
+  gap: 30px;
+  width: 90%;
+  max-width: 860px;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  border: 1px solid #000;
+  padding: 30px 15px;
+  background-color: #fff;
+}
+
+.card-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px;
+  color: white;
+  font-size: 0.5em;
+  background-color: #5f0dee;
+}
+
+.card-price {
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 1.25em;
+  text-align: center;
+}
+
+.card-button {
+  width: 100%;
+  margin-top: auto;
+  border: 1px solid black;
+  padding: 10px 0;
+  font-family: inherit;
+  font-weight: 800;
+  font-size: inherit;
+  text-transform: uppercase;
+  background-color: #fd24af;
+  cursor: pointer;
+}
+
+.card-button:hover {
+  background-color: #feafe8;
+}
+
+/* селектор: если(внутри есть .label) {
+  border-color: #5f0dee;
+} */
+</style></head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h2 class="card-title">Товар 1</h2>
+        <div class="card-price">1 тыщ миллионов</div>
+        <button class="card-button">Беру</button>
+      </div>
+      <div class="card">
+        <h2 class="card-title">
+          Товар 2
+          <span class="label">Бестселлер</span>
+        </h2>
+        <div class="card-price">100 тыщ миллионов</div>
+        <button class="card-button">Беру</button>
+      </div>
+      <div class="card">
+        <h2 class="card-title">Товар 3</h2>
+        <div class="card-price">1000 тыщ миллионов</div>
+        <button class="card-button">Беру</button>
+      </div>
+    </div>
+  
+
+</body></html>

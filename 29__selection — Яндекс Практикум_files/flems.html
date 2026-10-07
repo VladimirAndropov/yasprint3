@@ -1,0 +1,62 @@
+
+<!-- saved from url=(0123)https://sandbox.practicum-team.ru/tasks/02-interactivity-and-accessibility/04-pseudo/09-selection/example-01/pre/flems.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Демонстрация ::selection</title>
+    <link rel="stylesheet" href="./fonts.css">
+    <link rel="stylesheet" href="./style.css">
+  <style id="styles/style.css">body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 850px;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2em;
+  background-image: url(https://code.s3.yandex.net/web-code/images/dotted-l.svg);
+}
+
+div {
+  max-width: 500px;
+  border: 1px solid #000;
+  padding: 50px;
+  background-color: #fff;
+}
+
+p {
+  margin: 0;
+}
+
+p:first-child {
+  margin-bottom: 20px;
+}
+
+p:first-child::selection {
+  color: #6fc1fd;
+  background-color: black;
+}
+
+p:nth-child(2)::selection {
+  color: #5f0dee;
+  background-color: #6fc1fd;
+}
+</style></head>
+  <body>
+    <div>
+      <p>
+        Герой фильма — обычный человек — живет своей обычной жизнью. Необычность
+        заключается в том, что он пишет автобиографические книги, где в каждой
+        строчке есть выбор и смысл.
+      </p>
+      <p>
+        Его жизнь состоит из таких же выборов, как и у каждого человека. И так
+        же, как каждый человек, он делает свой выбор, но не всегда правильный. И
+        таким образом, можно сказать, что каждый из нас — писатель и читатель
+        одновременно.
+      </p>
+    </div>
+  
+
+</body></html>

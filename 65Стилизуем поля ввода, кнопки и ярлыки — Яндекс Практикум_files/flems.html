@@ -1,0 +1,57 @@
+
+<!-- saved from url=(0140)https://sandbox.practicum-team.ru/tasks/02-interactivity-and-accessibility/08-forms-style/02-inputs-buttons-labels/example-01/pre/flems.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Стилизуем поля ввода</title>
+    <link rel="stylesheet" href="./fonts.css">
+    <link rel="stylesheet" href="./style.css">
+  <style id="styles/style.css">* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-width: 650px;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  background-image: url(https://code.s3.yandex.net/web-code/images/dotted.svg);
+}
+
+form {
+  width: 600px;
+  margin-top: 100px;
+  border: 1px solid #000;
+  padding: 35px;
+  background-color: #fff;
+}
+
+input {
+  width: 100%;
+}
+
+p {
+  display: none;
+  margin-bottom: 0;
+}
+
+input:focus + p {
+  display: block;
+}
+</style></head>
+  <body>
+    <form>
+      <input>
+      <p>Появилась обводка поля. В разных браузерах обводка может отличаться</p>
+    </form>
+  
+
+</body></html>

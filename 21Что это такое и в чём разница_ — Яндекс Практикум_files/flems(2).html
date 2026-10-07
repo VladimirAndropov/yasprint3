@@ -1,0 +1,81 @@
+
+<!-- saved from url=(0108)https://sandbox.practicum-team.ru/tasks/01-semantics-and-layout/07-longread/01-all/example-05/pre/flems.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выпадение плавающего элемента</title>
+    <link rel="stylesheet" href="./fonts.css">
+    <link rel="stylesheet" href="./style(2).css">
+  <style id="styles/style.css">* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 850px;
+  margin: 0;
+  padding: 45px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+header,
+footer {
+  padding: 15px;
+  color: white;
+  background-color: #5f0dee;
+}
+
+.column {
+  float: left;
+  padding: 15px;
+}
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.menu {
+  width: 25%;
+}
+
+.content {
+  width: 75%;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.content p {
+  margin-bottom: 0;
+}
+</style></head>
+  <body>
+    <header>
+      <p>С приветом из плавающего прошлого!</p>
+    </header>
+    <div class="clearfix">
+      <div class="column menu">
+        <ul>
+          <li>Домой</li>
+          <li>О нас</li>
+          <li>Контакты</li>
+        </ul>
+      </div>
+
+      <div class="column content">
+        <h1>Так выглядели сайты раньше</h1>
+        <p>
+          Как-то даже непривычно. А где баннеры, уведомления о куках, просьбы
+          подписаться на рассылку и прочие окошки, напрыгивающие на тебя из-за
+          угла?
+        </p>
+      </div>
+    </div>
+    <footer>
+      <p>© Хоть значок копирайта никуда не делся!</p>
+    </footer>
+  
+
+</body></html>
